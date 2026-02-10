@@ -2,59 +2,199 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ikhwan Labib – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ikhwan Labib | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f9fafb;
-      color: #222;
+    * {
       margin: 0;
-      padding: 2rem;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #1f2937;
       line-height: 1.6;
     }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      margin-bottom: 40px;
+    }
+
     h1 {
-      color: #0055aa;
+      font-size: 36px;
+      color: #0f172a;
+      margin-bottom: 8px;
     }
-    .project {
-      margin-top: 1.5rem;
-      border-left: 4px solid #0055aa;
-      padding-left: 1rem;
+
+    .subtitle {
+      color: #475569;
+      font-size: 16px;
+      margin-bottom: 10px;
     }
-    a {
-      color: #0055aa;
+
+    .highlight {
+      color: #2563eb;
+      font-weight: 600;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #0f172a;
+      border-left: 5px solid #2563eb;
+      padding-left: 12px;
+    }
+
+    /* Project Cards */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      transition: 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+      color: #0f172a;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #475569;
+      margin-bottom: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #2563eb;
+      color: white;
+      border-radius: 8px;
       text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: 0.2s;
     }
-    a:hover {
+
+    .btn:hover {
+      background: #1e40af;
+    }
+
+    /* Contact */
+    .contact {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    .contact a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
       text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: #94a3b8;
     }
   </style>
 </head>
+
 <body>
-  <h1>Ikhwan Labib Habiballaah</h1>
-  <p>Electrical Engineering student at Universitas Indonesia specializing in Electronics & IT Systems.</p>
-  <p>Interested in IoT, Networking, and Web Systems. Currently seeking an IT Internship opportunity.</p>
 
-  <h2>Projects</h2>
-  <div class="project">
-    <h3>Web-based CLI Management System</h3>
-    <p>Flask & PostgreSQL project for managing device commands with authentication.</p>
-    <a href="hhttps://github.com/ikhwanlabib/WBCS" target="_blank">View on GitHub</a>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <h1>Ikhwan Labib Habiballaah</h1>
+      <p class="subtitle">
+        Electrical Engineering student at <span class="highlight">Universitas Indonesia</span> specializing in Electronics & IT Systems.
+      </p>
+      <p class="subtitle">
+        Interested in IoT, Networking, and Web Systems. Currently seeking an <span class="highlight">IT Internship</span>.
+      </p>
+    </header>
+
+    <!-- Projects -->
+    <section>
+      <h2>Projects</h2>
+
+      <div class="projects">
+
+        <div class="card">
+          <h3>Web-based CLI Management System</h3>
+          <p>Flask & PostgreSQL project for managing device commands with authentication and role access.</p>
+          <a class="btn" href="#">View on GitHub</a>
+        </div>
+
+        <div class="card">
+          <h3>TemaniTumbuh E-Learning Platform</h3>
+          <p>Parenting and early childhood web platform (UI/UX + full-stack development).</p>
+        </div>
+
+        <div class="card">
+          <h3>Fitness Assistance C Program</h3>
+          <p>Backend fitness assistance application built using C language.</p>
+          <a class="btn" href="#">View on GitHub</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>Email: <a href="mailto:ikhwan.labib@ui.ac.id">ikhwan.labib@ui.ac.id</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/ikhwanlabib">linkedin.com/in/ikhwanlabib</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Ikhwan Labib — Personal Portfolio
+    </footer>
+
   </div>
 
-  <div class="project">
-    <h3>TemaniTumbuh E-Learning Platform</h3>
-    <p>Parenting and early childhood web platform (UI/UX + full-stack design).</p>
-  </div>
-
-  <div class="project">
-    <h3> Fitness Assistance Simple C program</h3>
-    <p>Integrating my knowledge in Fitness with C language as a C(backend) program</p>
-    <a href="https://github.com/ikhwanlabib/FITNESS-ASSISTANCE-C-PROGRAM-" targer="_blank">View on Github</a>
-  </div>
-
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:ikhwan.labib@ui.ac.id">ikhwan.labib@ui.ac.id</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/ikhwanlabib" target="_blank">linkedin.com/in/ikhwanlabib</a></p>
 </body>
 </html>
