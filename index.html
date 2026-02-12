@@ -3,198 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ikhwan Labib | Portfolio</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Inter", sans-serif;
-    }
-
-    body {
-      background: #f5f7fb;
-      color: #1f2937;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    header {
-      margin-bottom: 40px;
-    }
-
-    h1 {
-      font-size: 36px;
-      color: #0f172a;
-      margin-bottom: 8px;
-    }
-
-    .subtitle {
-      color: #475569;
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-
-    .highlight {
-      color: #2563eb;
-      font-weight: 600;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
-      color: #0f172a;
-      border-left: 5px solid #2563eb;
-      padding-left: 12px;
-    }
-
-    /* Project Cards */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-      transition: 0.25s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
-    }
-
-    .card h3 {
-      margin-bottom: 8px;
-      color: #0f172a;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: #475569;
-      margin-bottom: 12px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 8px 14px;
-      background: #2563eb;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-      transition: 0.2s;
-    }
-
-    .btn:hover {
-      background: #1e40af;
-    }
-
-    /* Contact */
-    .contact {
-      background: white;
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    }
-
-    .contact p {
-      margin-bottom: 10px;
-      font-size: 15px;
-    }
-
-    .contact a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .contact a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 13px;
-      color: #94a3b8;
-    }
-  </style>
+  <title>Ikhwan Labib | Electrical Engineer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- HERO -->
+<header class="hero">
   <div class="container">
+    <h1>Ikhwan Labib Habiballaah</h1>
+    <p>Electrical Engineering Student — Electronics & IT Systems</p>
+    <p>IoT • Networking • Embedded • Web Systems</p>
 
-    <!-- Header -->
-    <header>
-      <h1>Ikhwan Labib Habiballaah</h1>
-      <p class="subtitle">
-        Electrical Engineering student at <span class="highlight">Universitas Indonesia</span> specializing in Electronics & IT Systems.
-      </p>
-      <p class="subtitle">
-        Interested in IoT, Networking, and Web Systems. Currently seeking an <span class="highlight">IT Internship</span>.
-      </p>
-    </header>
+    <div class="contact">
+      <a href="mailto:ikhwan.labib@ui.ac.id">Email</a>
+      <a href="https://linkedin.com/in/ikhwanlabib" target="_blank">LinkedIn</a>
+      <a href="https://github.com/ikhwanlabib" target="_blank">GitHub</a>
+    </div>
+  </div>
+</header>
 
-    <!-- Projects -->
-    <section>
-      <h2>Projects</h2>
+<!-- ABOUT -->
+<section class="section">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      Electrical Engineering student at Universitas Indonesia specializing in Electronics and IT Systems.
+      Experienced in AI, IoT systems, networking, embedded electronics, and smart sensing technologies.
+    </p>
+  </div>
+</section>
 
-      <div class="projects">
+<!-- PROJECTS -->
+<section class="section dark">
+  <div class="container">
+    <h2>Projects</h2>
 
-        <div class="card">
-          <h3>Web-based CLI Management System</h3>
-          <p>Flask & PostgreSQL project for managing device commands with authentication and role access.</p>
-          <a class="btn" href="#">View on GitHub</a>
-        </div>
-
-        <div class="card">
-          <h3>TemaniTumbuh E-Learning Platform</h3>
-          <p>Parenting and early childhood web platform (UI/UX + full-stack development).</p>
-        </div>
-
-        <div class="card">
-          <h3>Fitness Assistance C Program</h3>
-          <p>Backend fitness assistance application built using C language.</p>
-          <a class="btn" href="#">View on GitHub</a>
-        </div>
-
+    <!-- WEB CLI -->
+    <div class="project">
+      <div class="project-image">IMAGE HERE</div>
+      <div>
+        <h3>Web-based CLI Management System</h3>
+        <p>Flask & PostgreSQL platform for managing network device commands with authentication and history logging.</p>
       </div>
-    </section>
+    </div>
 
-    <!-- Contact -->
-    <section>
-      <h2>Contact</h2>
-      <div class="contact">
-        <p>Email: <a href="mailto:ikhwan.labib@ui.ac.id">ikhwan.labib@ui.ac.id</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/ikhwanlabib">linkedin.com/in/ikhwanlabib</a></p>
+    <!-- IOT RAIN -->
+    <div class="project">
+      <div class="project-image">IMAGE HERE</div>
+      <div>
+        <h3>IoT Rain Detector System</h3>
+        <p>ESP32-based smart rain monitoring system with Firebase cloud logging and real-time alerts.</p>
       </div>
-    </section>
+    </div>
 
-    <footer>
-      © 2026 Ikhwan Labib — Personal Portfolio
-    </footer>
+    <!-- PEDESTRIAN -->
+    <div class="project">
+      <div class="project-image">IMAGE HERE</div>
+      <div>
+        <h3>Automatic Pedestrian Crossing System</h3>
+        <p>Proteus simulation using IR sensors, op-amp comparator, MOSFET, and BJT for automated traffic control.</p>
+      </div>
+    </div>
+
+    <!-- LNA -->
+    <div class="project">
+      <div class="project-image">IMAGE HERE</div>
+      <div>
+        <h3>Low Noise Amplifier Design (ADS)</h3>
+        <p>3.4–3.6 GHz LNA simulation achieving 10 dB gain, NF 1.8 dB, and stable RF performance.</p>
+      </div>
+    </div>
+
+    <!-- FITNESS -->
+    <div class="project">
+      <div class="project-image">IMAGE HERE</div>
+      <div>
+        <h3>Fitness Assistance Program (C Language)</h3>
+        <p>Console-based calorie estimation and workout planning program built with C.</p>
+      </div>
+    </div>
+
+    <!-- TIKTOK -->
+    <div class="project">
+      <div class="project-image">IMAGE HERE</div>
+      <div>
+        <h3>TikTok Fitness Education & Affiliate Portfolio</h3>
+        <p>Built account to 6K followers, 1.4M views, and IDR 26M+ GMV via affiliate marketing.</p>
+      </div>
+    </div>
 
   </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section">
+  <div class="container">
+    <h2>Experience</h2>
+
+    <h3>PT Aplikanusa Lintasarta</h3>
+    <p>Network Operation Intern — Developed web-based CLI system and automated network interaction tools.</p>
+
+    <h3>UI Racing Team</h3>
+    <p>Electrical Division — Designed brake light system & wiring harness for Formula Student race car.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Ikhwan Labib Habiballaah</p>
+</footer>
 
 </body>
 </html>
