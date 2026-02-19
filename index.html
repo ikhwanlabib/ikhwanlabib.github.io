@@ -1,119 +1,304 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ikhwan Labib | Electrical Engineer Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ikhwan Labib</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">Ikhwan Labib</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Beranda</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#skills" class="nav-link">Skill</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="container">
-    <h1>Ikhwan Labib Habiballaah</h1>
-    <p>Electrical Engineering Student — Electronics & IT Systems</p>
-    <p>IoT • Networking • Embedded • Web Systems</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Halo, Saya Ikhwan Labib 👋</h1>
+                <p class="hero-subtitle">Seorang Developer & Designer yang passionate</p>
+                <p class="hero-description">Saya menciptakan pengalaman digital yang indah dan fungsional</p>
+                <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+            </div>
+            <div class="hero-image">
+                <div class="placeholder-image">
+                    <i class="fas fa-user-circle"></i>
+                    <p>Foto Profil 400x400px</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="contact">
-      <a href="mailto:ikhwan.labib@ui.ac.id">Email</a>
-      <a href="https://linkedin.com/in/ikhwanlabib" target="_blank">LinkedIn</a>
-      <a href="https://github.com/ikhwanlabib" target="_blank">GitHub</a>
-    </div>
-  </div>
-</header>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="placeholder-image-large">
+                        <i class="fas fa-image"></i>
+                        <p>Foto Tentang Anda 300x300px</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Cerita Saya</h3>
+                    <p>Gantikan teks ini dengan cerita dan pengalaman Anda. Jelaskan latar belakang, keahlian, dan apa yang membuat Anda unik.</p>
+                    <p>Berbagi visi Anda dan apa yang ingin Anda capai dalam karir Anda.</p>
+                    <a href="#portfolio" class="btn btn-secondary">Lihat Portfolio Saya</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ABOUT -->
-<section class="section">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>
-      Electrical Engineering student at Universitas Indonesia specializing in Electronics and IT Systems.
-      Experienced in AI, IoT systems, networking, embedded electronics, and smart sensing technologies.
-    </p>
-  </div>
-</section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300?text=Project+1" alt="Project 1">
+                        <div class="overlay">
+                            <a href="#" class="btn btn-small">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Nama Project 1</h3>
+                        <p>Deskripsi singkat project Anda di sini. Tuliskan teknologi yang digunakan.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
 
-<!-- PROJECTS -->
-<section class="section dark">
-  <div class="container">
-    <h2>Projects</h2>
+                <!-- Project 2 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300?text=Project+2" alt="Project 2">
+                        <div class="overlay">
+                            <a href="#" class="btn btn-small">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Nama Project 2</h3>
+                        <p>Deskripsi singkat project Anda di sini. Tuliskan teknologi yang digunakan.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- WEB CLI -->
-    <div class="project">
-      <div class="project-image">IMAGE HERE</div>
-      <div>
-        <h3>Web-based CLI Management System</h3>
-        <p>Flask & PostgreSQL platform for managing network device commands with authentication and history logging.</p>
-      </div>
-    </div>
+                <!-- Project 3 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300?text=Project+3" alt="Project 3">
+                        <div class="overlay">
+                            <a href="#" class="btn btn-small">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Nama Project 3</h3>
+                        <p>Deskripsi singkat project Anda di sini. Tuliskan teknologi yang digunakan.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- IOT RAIN -->
-    <div class="project">
-      <div class="project-image">IMAGE HERE</div>
-      <div>
-        <h3>IoT Rain Detector System</h3>
-        <p>ESP32-based smart rain monitoring system with Firebase cloud logging and real-time alerts.</p>
-      </div>
-    </div>
+                <!-- Project 4 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300?text=Project+4" alt="Project 4">
+                        <div class="overlay">
+                            <a href="#" class="btn btn-small">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Nama Project 4</h3>
+                        <p>Deskripsi singkat project Anda di sini. Tuliskan teknologi yang digunakan.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- PEDESTRIAN -->
-    <div class="project">
-      <div class="project-image">IMAGE HERE</div>
-      <div>
-        <h3>Automatic Pedestrian Crossing System</h3>
-        <p>Proteus simulation using IR sensors, op-amp comparator, MOSFET, and BJT for automated traffic control.</p>
-      </div>
-    </div>
+                <!-- Project 5 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300?text=Project+5" alt="Project 5">
+                        <div class="overlay">
+                            <a href="#" class="btn btn-small">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Nama Project 5</h3>
+                        <p>Deskripsi singkat project Anda di sini. Tuliskan teknologi yang digunakan.</p>
+                        <div class="project-tags">
+                            <span class="tag">Mobile</span>
+                            <span class="tag">Flutter</span>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- LNA -->
-    <div class="project">
-      <div class="project-image">IMAGE HERE</div>
-      <div>
-        <h3>Low Noise Amplifier Design (ADS)</h3>
-        <p>3.4–3.6 GHz LNA simulation achieving 10 dB gain, NF 1.8 dB, and stable RF performance.</p>
-      </div>
-    </div>
+                <!-- Project 6 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300?text=Project+6" alt="Project 6">
+                        <div class="overlay">
+                            <a href="#" class="btn btn-small">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Nama Project 6</h3>
+                        <p>Deskripsi singkat project Anda di sini. Tuliskan teknologi yang digunakan.</p>
+                        <div class="project-tags">
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- FITNESS -->
-    <div class="project">
-      <div class="project-image">IMAGE HERE</div>
-      <div>
-        <h3>Fitness Assistance Program (C Language)</h3>
-        <p>Console-based calorie estimation and workout planning program built with C.</p>
-      </div>
-    </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skill & Keahlian</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript, React, Vue.js</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Backend</h3>
+                    <p>Node.js, Python, Django, Express.js</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile</h3>
+                    <p>Flutter, React Native</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Design</h3>
+                    <p>UI/UX Design, Figma, Adobe XD</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Tools</h3>
+                    <p>Git, Docker, AWS, Firebase</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Soft Skills</h3>
+                    <p>Problem Solving, Communication, Teamwork</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- TIKTOK -->
-    <div class="project">
-      <div class="project-image">IMAGE HERE</div>
-      <div>
-        <h3>TikTok Fitness Education & Affiliate Portfolio</h3>
-        <p>Built account to 6K followers, 1.4M views, and IDR 26M+ GMV via affiliate marketing.</p>
-      </div>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <p class="contact-intro">Saya senang mendengar dari Anda! Mari kita bicarakan proyek Anda.</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:your@email.com">your@email.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Telepon</h3>
+                        <p><a href="tel:+62xxxxx">+62 (XXX) XXXX-XXXX</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Lokasi</h3>
+                        <p>Kota, Indonesia</p>
+                    </div>
+                </div>
 
-  </div>
-</section>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subjek">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-<!-- EXPERIENCE -->
-<section class="section">
-  <div class="container">
-    <h2>Experience</h2>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ikhwan Labib</h3>
+                    <p>Developer & Designer yang passionate tentang menciptakan solusi digital terbaik.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ikhwan Labib. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-    <h3>PT Aplikanusa Lintasarta</h3>
-    <p>Network Operation Intern — Developed web-based CLI system and automated network interaction tools.</p>
-
-    <h3>UI Racing Team</h3>
-    <p>Electrical Division — Designed brake light system & wiring harness for Formula Student race car.</p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Ikhwan Labib Habiballaah</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
