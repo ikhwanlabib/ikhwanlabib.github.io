@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Ikhwan Labib</title>
+    <title>Ikhwan Labib - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,11 +13,11 @@
         <div class="container">
             <div class="navbar-brand">Ikhwan Labib</div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Beranda</a></li>
-                <li><a href="#about" class="nav-link">Tentang</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#skills" class="nav-link">Skill</a></li>
-                <li><a href="#contact" class="nav-link">Kontak</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -31,15 +31,16 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Halo, Saya Ikhwan Labib 👋</h1>
-                <p class="hero-subtitle">Seorang Developer & Designer yang passionate</p>
-                <p class="hero-description">Saya menciptakan pengalaman digital yang indah dan fungsional</p>
-                <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+                <h1 class="hero-title">IKHWAN LABIB</h1>
+                <p class="hero-subtitle">HABIBALLAAH</p>
+                <p class="hero-description">Electrical Engineering Student | Electronics & IT Systems Specialist</p>
+                <p class="hero-description-sub">University of Indonesia</p>
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
             </div>
             <div class="hero-image">
                 <div class="placeholder-image">
                     <i class="fas fa-user-circle"></i>
-                    <p>Foto Profil 400x400px</p>
+                    <p>Your Photo Here<br>(400x400px)</p>
                 </div>
             </div>
         </div>
@@ -48,134 +49,188 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">Tentang Saya</h2>
+            <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="about-image">
-                    <div class="placeholder-image-large">
-                        <i class="fas fa-image"></i>
-                        <p>Foto Tentang Anda 300x300px</p>
-                    </div>
-                </div>
                 <div class="about-text">
-                    <h3>Cerita Saya</h3>
-                    <p>Gantikan teks ini dengan cerita dan pengalaman Anda. Jelaskan latar belakang, keahlian, dan apa yang membuat Anda unik.</p>
-                    <p>Berbagi visi Anda dan apa yang ingin Anda capai dalam karir Anda.</p>
-                    <a href="#portfolio" class="btn btn-secondary">Lihat Portfolio Saya</a>
+                    <h3>Summary</h3>
+                    <p>Electrical Engineering student at the University of Indonesia, specializing in Electronics and IT Systems, with hands-on experience in artificial intelligence, advanced networked systems, embedded electronics, and smart sensing technologies.</p>
+                    <p>I combine technical expertise with creative problem-solving, demonstrated through leading web-based CLI tools, designing sensor systems for Formula Student race cars, and building IoT solutions that integrate hardware and cloud computing.</p>
+                    <p>My non-technical experience includes scaling a fitness education TikTok account to 6,000+ followers and 1.4M+ views, generating IDR 26M+ GMV through affiliate marketing—showcasing my ability to communicate complex concepts and build engaged communities.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Portfolio</h2>
-            <div class="portfolio-grid">
-                <!-- Project 1 -->
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300?text=Project+1" alt="Project 1">
-                        <div class="overlay">
-                            <a href="#" class="btn btn-small">Lihat Detail</a>
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="experience-grid">
+                <!-- Experience 1 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Network Operation Internship</h3>
+                        <span class="company">PT Aplikasi Nusa Lintas Arta</span>
+                    </div>
+                    <p class="role"><i class="fas fa-briefcase"></i> Division of Network Operation</p>
+                    <p>Led the development of a web-based Command Line Interface (CLI) tool using Python with Flask framework and Netmiko library for secure, automated network device interactions.</p>
+                    <ul>
+                        <li>Built backend using PostgreSQL with 100+ network nodes</li>
+                        <li>Integrated Netmiko for secure network automation</li>
+                        <li>Served both internal teams and external clients</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Senior Staff - Electrical</h3>
+                        <span class="company">PT Aplikasi Nusa Lintas Arta</span>
+                    </div>
+                    <p class="role"><i class="fas fa-briefcase"></i> Division of Electrical</p>
+                    <p>Designed and implemented sensor-based brake light and wiring harness for Formula Student race car competing in Czech Republic.</p>
+                    <ul>
+                        <li>Cross-disciplinary collaboration with mechanical and powertrain teams</li>
+                        <li>Hardware testing and power systems design</li>
+                        <li>Data acquisition circuits implementation</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Content Creator & Affiliate Marketer</h3>
+                        <span class="company">TikTok - Fitness Education</span>
+                    </div>
+                    <p class="role"><i class="fas fa-video"></i> 2025 - Present</p>
+                    <p>Built fitness education account from zero to 6,000+ followers and 1.4M+ total views with consistent, insight-driven content on beginner-friendly gym guidance.</p>
+                    <ul>
+                        <li>Generated IDR 26M+ GMV through TikTok Shop affiliate marketing</li>
+                        <li>Received 20+ brand collaboration invitations</li>
+                        <li>Optimized content through audience analytics and behavior tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1: IoT Rain Detector -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-project">
+                            <i class="fas fa-cloud-rain-sun"></i>
                         </div>
                     </div>
-                    <div class="portfolio-info">
-                        <h3>Nama Project 1</h3>
-                        <p>Deskripsi singkat project Anda di sini. Tuliskan teknologi yang digunakan.</p>
+                    <div class="project-info">
+                        <h3>IoT Rain Detector System</h3>
+                        <p>An enhanced IoT rain detection system using ESP32, capable of detecting rainfall intensity, activating alerts, and logging sensor data to Firebase for real-time monitoring and historical analysis.</p>
+                        <div class="project-highlights">
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>Analog rain sensor integration with ESP32</li>
+                                <li>Real-time cloud logging via Firebase</li>
+                                <li>Alert system with buzzer and LED indicators</li>
+                                <li>Wi-Fi connectivity for remote monitoring</li>
+                            </ul>
+                        </div>
                         <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
+                            <span class="tag">ESP32</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">Arduino IDE</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300?text=Project+2" alt="Project 2">
-                        <div class="overlay">
-                            <a href="#" class="btn btn-small">Lihat Detail</a>
+                <!-- Project 2: Automatic Pedestrian Crossing -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-project">
+                            <i class="fas fa-traffic-light"></i>
                         </div>
                     </div>
-                    <div class="portfolio-info">
-                        <h3>Nama Project 2</h3>
-                        <p>Deskripsi singkat project Anda di sini. Tuliskan teknologi yang digunakan.</p>
+                    <div class="project-info">
+                        <h3>Automatic Pedestrian Crossing System</h3>
+                        <p>A simulated automatic pedestrian crossing system designed in Proteus using IR sensors, BJT, MOSFET, and diodes. The system detects pedestrians and automatically controls traffic lights.</p>
+                        <div class="project-highlights">
+                            <p><strong>System Components:</strong></p>
+                            <ul>
+                                <li>Op-amp comparator for object detection</li>
+                                <li>RC delay circuit for debounce/timing</li>
+                                <li>MOSFET for high-side/low-side switching</li>
+                                <li>BJT stage for pedestrian lights</li>
+                                <li>ESP32 integration for cloud logging</li>
+                            </ul>
+                        </div>
                         <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300?text=Project+3" alt="Project 3">
-                        <div class="overlay">
-                            <a href="#" class="btn btn-small">Lihat Detail</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Nama Project 3</h3>
-                        <p>Deskripsi singkat project Anda di sini. Tuliskan teknologi yang digunakan.</p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
+                            <span class="tag">Proteus</span>
+                            <span class="tag">Electronics</span>
+                            <span class="tag">ESP32</span>
                             <span class="tag">Firebase</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300?text=Project+4" alt="Project 4">
-                        <div class="overlay">
-                            <a href="#" class="btn btn-small">Lihat Detail</a>
+                <!-- Project 3: Low Noise Amplifier Design -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-project">
+                            <i class="fas fa-microchip"></i>
                         </div>
                     </div>
-                    <div class="portfolio-info">
-                        <h3>Nama Project 4</h3>
-                        <p>Deskripsi singkat project Anda di sini. Tuliskan teknologi yang digunakan.</p>
+                    <div class="project-info">
+                        <h3>Low Noise Amplifier (LNA) Design</h3>
+                        <p>RF/Microwave circuit design project simulated in ADS (Advanced Design System). One-stage LNA design achieving target specifications for 3.4-3.6 GHz operation.</p>
+                        <div class="project-highlights">
+                            <p><strong>Design Achievements:</strong></p>
+                            <ul>
+                                <li>Gain: 10 dB (exceeds target)</li>
+                                <li>Noise Figure: 1.8 dB (under 3 dB target)</li>
+                                <li>S11 = -10.5 dB, S22 = -14.4 dB (Both < -10 dB)</li>
+                                <li>Stability Factor μ = 1.68</li>
+                                <li>Power Consumption: ~20 mW</li>
+                            </ul>
+                        </div>
                         <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Django</span>
+                            <span class="tag">ADS</span>
+                            <span class="tag">RF Design</span>
+                            <span class="tag">Microwave</span>
+                            <span class="tag">Circuit Design</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 5 -->
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300?text=Project+5" alt="Project 5">
-                        <div class="overlay">
-                            <a href="#" class="btn btn-small">Lihat Detail</a>
+                <!-- Project 4: Fitness Assistance Program -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-project">
+                            <i class="fas fa-dumbbell"></i>
                         </div>
                     </div>
-                    <div class="portfolio-info">
-                        <h3>Nama Project 5</h3>
-                        <p>Deskripsi singkat project Anda di sini. Tuliskan teknologi yang digunakan.</p>
+                    <div class="project-info">
+                        <h3>Fitness Assistance Program (C Language)</h3>
+                        <p>A console-based C program that calculates calories burned based on activity type, duration, and bodyweight. Showcases logic, computation, and user input handling fundamentals.</p>
+                        <div class="project-highlights">
+                            <p><strong>Program Features:</strong></p>
+                            <ul>
+                                <li>User input for physical profile (height, age, weight)</li>
+                                <li>Workout type selection (Cardio, Strength, Flexibility)</li>
+                                <li>Equipment/exercise selection with dynamic arrays</li>
+                                <li>Personalized weekly training plan generation</li>
+                                <li>Calorie burn estimation algorithms</li>
+                            </ul>
+                        </div>
                         <div class="project-tags">
-                            <span class="tag">Mobile</span>
-                            <span class="tag">Flutter</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300?text=Project+6" alt="Project 6">
-                        <div class="overlay">
-                            <a href="#" class="btn btn-small">Lihat Detail</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Nama Project 6</h3>
-                        <p>Deskripsi singkat project Anda di sini. Tuliskan teknologi yang digunakan.</p>
-                        <div class="project-tags">
-                            <span class="tag">UI/UX</span>
-                            <span class="tag">Design</span>
+                            <span class="tag">C Language</span>
+                            <span class="tag">Console App</span>
+                            <span class="tag">Algorithm</span>
                         </div>
                     </div>
                 </div>
@@ -186,37 +241,37 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skill & Keahlian</h2>
+            <h2 class="section-title">Skills & Expertise</h2>
+            
             <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Frontend</h3>
-                    <p>HTML, CSS, JavaScript, React, Vue.js</p>
+                <div class="skill-category">
+                    <h3><i class="fas fa-microchip"></i> Electronics & Hardware</h3>
+                    <p>Circuit Design | PCB Layout | Sensor Integration | Power Systems | Signal Processing | RF/Microwave Design</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Backend</h3>
-                    <p>Node.js, Python, Django, Express.js</p>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <p>Python | C | Arduino IDE | Flask | JavaScript | HTML/CSS</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Mobile</h3>
-                    <p>Flutter, React Native</p>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-network-wired"></i> Networking & IT</h3>
+                    <p>Network Automation | Netmiko | Network Devices | PostgreSQL | Backend Development</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>Design</h3>
-                    <p>UI/UX Design, Figma, Adobe XD</p>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> IoT & Cloud</h3>
+                    <p>Firebase | Real-time Database | Cloud Data Logging | Wi-Fi Integration | Embedded Systems</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Tools</h3>
-                    <p>Git, Docker, AWS, Firebase</p>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Design Tools</h3>
+                    <p>Proteus | ADS (Advanced Design System) | DEV-C++ | Arduino IDE</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Soft Skills</h3>
-                    <p>Problem Solving, Communication, Teamwork</p>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-line"></i> Soft Skills</h3>
+                    <p>Problem Solving | Team Collaboration | Technical Leadership | Content Creation | Analytics</p>
                 </div>
             </div>
         </div>
@@ -225,42 +280,44 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Hubungi Saya</h2>
-            <p class="contact-intro">Saya senang mendengar dari Anda! Mari kita bicarakan proyek Anda.</p>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-intro">Feel free to reach out to discuss projects, opportunities, or collaborations!</p>
             
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <h3>Email</h3>
-                        <p><a href="mailto:your@email.com">your@email.com</a></p>
+                        <p><a href="mailto:ikhwan.labib@ui.ac.id">ikhwan.labib@ui.ac.id</a></p>
                     </div>
+                    
                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <h3>Telepon</h3>
-                        <p><a href="tel:+62xxxxx">+62 (XXX) XXXX-XXXX</a></p>
+                        <i class="fas fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://linkedin.com/in/ikhwanlabib" target="_blank">linkedin.com/in/ikhwanlabib</a></p>
                     </div>
+                    
                     <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Lokasi</h3>
-                        <p>Kota, Indonesia</p>
+                        <i class="fas fa-university"></i>
+                        <h3>Education</h3>
+                        <p>University of Indonesia<br>Electrical Engineering</p>
                     </div>
                 </div>
 
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <input type="text" placeholder="Nama Anda" required>
+                        <input type="text" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Email Anda" required>
+                        <input type="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Subjek">
+                        <input type="text" placeholder="Subject">
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </div>
@@ -272,24 +329,24 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Ikhwan Labib</h3>
-                    <p>Developer & Designer yang passionate tentang menciptakan solusi digital terbaik.</p>
+                    <p>Electrical Engineering student passionate about IoT, embedded systems, and innovative problem-solving.</p>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#home">Beranda</a></li>
-                        <li><a href="#about">Tentang</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Kontak</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Social Media</h3>
                     <div class="social-links">
+                        <a href="https://linkedin.com/in/ikhwanlabib" class="social-link"><i class="fab fa-linkedin"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
             </div>
