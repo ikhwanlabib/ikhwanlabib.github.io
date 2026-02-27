@@ -786,8 +786,7 @@ blockquote {
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    background: linear-gradient(135deg, rgba(var(--proj-color), 0.15), rgba(99, 102, 241, 0.1));
-    background: linear-gradient(135deg, color-mix(in srgb, var(--proj-color) 20%, transparent), rgba(99, 102, 241, 0.08));
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(99, 102, 241, 0.05));
     border-bottom: 1px solid var(--border-glass);
     position: relative;
     overflow: hidden;
