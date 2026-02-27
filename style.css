@@ -65,6 +65,7 @@ html {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top; /* focuses on face/upper body */
     border-radius: 50%;
     display: block;
 }
@@ -467,6 +468,7 @@ section { padding: 100px 0; }
     background: var(--accent-grad);
     animation: float 4s ease-in-out infinite, ring-pulse 3s ease-in-out infinite;
     flex-shrink: 0;
+    overflow: hidden; /* ← ADD THIS */
 }
 @keyframes float {
     0%, 100% { transform: translateY(0); }
