@@ -315,6 +315,16 @@
     // ============================================================
     // FLIP CARDS (Experience Section)
     // ============================================================
+    function setFlipCardHeights() {
+        document.querySelectorAll('.flip-card').forEach(function (card) {
+            var inner = card.querySelector('.flip-card-inner');
+            var front = card.querySelector('.flip-card-front');
+            if (inner && front) {
+                inner.style.height = front.offsetHeight + 'px';
+            }
+        });
+    }
+
     document.querySelectorAll('.flip-card').forEach(function (card) {
         card.setAttribute('tabindex', '0');
         card.setAttribute('role', 'button');
@@ -331,6 +341,9 @@
             }
         });
     });
+
+    setFlipCardHeights();
+    window.addEventListener('resize', setFlipCardHeights);
 
     // ============================================================
     // CONTACT FORM
