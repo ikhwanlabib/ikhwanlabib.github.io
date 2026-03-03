@@ -63,12 +63,12 @@ html {
 
 .profile-photo {
     width: 100%;
-    height: 100%;
+    max-width: 320px;   /* batas maksimum */
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    object-position: center top; /* focuses on face/upper body */
+    object-position: center top;
     border-radius: 50%;
     display: block;
-    image-rendering: auto;
 }
 body {
     font-family: 'Inter', 'Segoe UI', sans-serif;
@@ -604,16 +604,15 @@ blockquote {
     margin-bottom: 32px;
 }
 .edu-logo {
-    width: 64px;
-    height: 64px;
-    border-radius: 14px;
-    background: var(--accent-grad);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.8rem;
-    color: white;
-    flex-shrink: 0;
+}
+
+.ui-logo {
+    width: 70px;        /* bisa ubah 60–90px sesuai layout */
+    height: auto;
+    object-fit: contain;
 }
 .edu-meta h3 {
     font-size: 1.5rem;
@@ -708,6 +707,11 @@ blockquote {
     font-size: 0.85rem;
     z-index: 1;
     box-shadow: 0 0 0 4px var(--bg-secondary);
+}
+.timeline-logo {
+    width: 70%;          /* supaya ada padding natural */
+    height: 70%;
+    object-fit: contain; /* penting untuk logo */
 }
 .timeline-card {
     padding: 28px 32px;
