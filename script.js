@@ -313,6 +313,26 @@
     });
 
     // ============================================================
+    // FLIP CARDS (Experience Section)
+    // ============================================================
+    document.querySelectorAll('.flip-card').forEach(function (card) {
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('role', 'button');
+        card.setAttribute('aria-pressed', 'false');
+        card.addEventListener('click', function () {
+            var flipped = card.classList.toggle('flipped');
+            card.setAttribute('aria-pressed', flipped ? 'true' : 'false');
+        });
+        card.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                var flipped = card.classList.toggle('flipped');
+                card.setAttribute('aria-pressed', flipped ? 'true' : 'false');
+            }
+        });
+    });
+
+    // ============================================================
     // CONTACT FORM
     // ============================================================
     const contactForm = document.getElementById('contactForm');
