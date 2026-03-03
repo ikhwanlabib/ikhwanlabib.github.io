@@ -63,8 +63,7 @@ html {
 
 .profile-photo {
     width: 100%;
-    max-width: 320px;   /* batas maksimum */
-    aspect-ratio: 1 / 1;
+    height: 100%;
     object-fit: cover;
     object-position: center top;
     border-radius: 50%;
@@ -714,16 +713,59 @@ blockquote {
     object-fit: contain; /* penting untuk logo */
 }
 .timeline-card {
-    padding: 28px 32px;
     overflow: hidden;
+    padding: 0;
 }
-.exp-thumb {
-    display: block;
-    width: calc(100% + 64px); /* offset timeline-card horizontal padding (2 × 32px) */
-    height: 180px;
+/* Flip card */
+.flip-card {
+    perspective: 1200px;
+    width: 100%;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.55s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front {
+    position: relative;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: var(--radius-lg);
+    padding: 28px 32px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.flip-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+.flip-card-back img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    margin: -28px -32px 24px; /* pull flush with card edges (matches padding: 28px 32px) */
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    display: block;
+}
+.flip-hint {
+    margin-top: 16px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 .timeline-header {
     display: flex;
@@ -761,7 +803,7 @@ blockquote {
     align-items: center;
     gap: 6px;
 }
-.timeline-card > p {
+.flip-card-front > p {
     color: var(--text-secondary);
     margin-bottom: 14px;
     font-size: 0.95rem;
