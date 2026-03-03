@@ -68,8 +68,7 @@ html {
     object-position: center top; /* focuses on face/upper body */
     border-radius: 50%;
     display: block;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
+    image-rendering: auto;
 }
 body {
     font-family: 'Inter', 'Segoe UI', sans-serif;
@@ -463,14 +462,15 @@ section { padding: 100px 0; }
 /* Profile Image */
 .hero-image-wrap { display: flex; align-items: center; justify-content: center; }
 .profile-ring {
-    width: 320px;
-    height: 320px;
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
     padding: 4px;
     background: var(--accent-grad);
     animation: float 4s ease-in-out infinite, ring-pulse 3s ease-in-out infinite;
     flex-shrink: 0;
-    overflow: hidden; /* ← ADD THIS */
+    overflow: hidden;
+    will-change: transform;
 }
 @keyframes float {
     0%, 100% { transform: translateY(0); }
@@ -711,6 +711,15 @@ blockquote {
 }
 .timeline-card {
     padding: 28px 32px;
+    overflow: hidden;
+}
+.exp-thumb {
+    display: block;
+    width: calc(100% + 64px); /* offset timeline-card horizontal padding (2 × 32px) */
+    height: 180px;
+    object-fit: cover;
+    margin: -28px -32px 24px; /* pull flush with card edges (matches padding: 28px 32px) */
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 .timeline-header {
     display: flex;
@@ -778,7 +787,7 @@ blockquote {
    ============================================================ */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 28px;
 }
 .project-card {
@@ -791,24 +800,41 @@ blockquote {
     transform: translateY(-6px);
     box-shadow: 0 20px 60px rgba(0,0,0,0.4), var(--shadow-glow);
 }
-.project-icon-area {
-    height: 120px;
+.project-image-area {
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-glass);
+    flex-shrink: 0;
+}
+.project-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: 2;
+    transition: transform 0.4s ease;
+}
+.project-card:hover .project-img { transform: scale(1.05); }
+.project-icon-fallback {
+    position: absolute;
+    inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(99, 102, 241, 0.05));
-    border-bottom: 1px solid var(--border-glass);
-    position: relative;
-    overflow: hidden;
+    z-index: 1;
 }
-.project-icon-area::before {
+.project-icon-fallback::before {
     content: '';
     position: absolute;
     inset: 0;
     background: radial-gradient(circle at center, rgba(255,255,255,0.06), transparent 70%);
 }
-.project-icon-area i {
+.project-icon-fallback i {
     position: relative;
     z-index: 1;
     color: var(--proj-color);
@@ -1158,12 +1184,21 @@ blockquote {
 .projects-grid .project-card:nth-child(2) { transition-delay: 0.1s; }
 .projects-grid .project-card:nth-child(3) { transition-delay: 0.2s; }
 .projects-grid .project-card:nth-child(4) { transition-delay: 0.3s; }
+.projects-grid .project-card:nth-child(5) { transition-delay: 0.4s; }
+.projects-grid .project-card:nth-child(6) { transition-delay: 0.5s; }
 .skill-categories .skill-cat-card:nth-child(1) { transition-delay: 0s; }
 .skill-categories .skill-cat-card:nth-child(2) { transition-delay: 0.07s; }
 .skill-categories .skill-cat-card:nth-child(3) { transition-delay: 0.14s; }
 .skill-categories .skill-cat-card:nth-child(4) { transition-delay: 0.21s; }
 .skill-categories .skill-cat-card:nth-child(5) { transition-delay: 0.28s; }
 .skill-categories .skill-cat-card:nth-child(6) { transition-delay: 0.35s; }
+
+/* ============================================================
+   RESPONSIVE — 1024px (tablet)
+   ============================================================ */
+@media (max-width: 1024px) {
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
 
 /* ============================================================
    RESPONSIVE — 768px
@@ -1183,7 +1218,7 @@ blockquote {
     .hero-cta { justify-content: center; }
     .hero-stats { grid-template-columns: repeat(2, 1fr); }
     .hero-image-wrap { order: -1; }
-    .profile-ring { width: 240px; height: 240px; }
+    .profile-ring { width: 260px; height: 260px; }
 
     .about-grid { grid-template-columns: 1fr; }
     .edu-header { flex-direction: column; gap: 16px; }
