@@ -68,6 +68,8 @@ html {
     object-position: center top; /* focuses on face/upper body */
     border-radius: 50%;
     display: block;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 body {
     font-family: 'Inter', 'Segoe UI', sans-serif;
@@ -461,8 +463,8 @@ section { padding: 100px 0; }
 /* Profile Image */
 .hero-image-wrap { display: flex; align-items: center; justify-content: center; }
 .profile-ring {
-    width: 260px;
-    height: 260px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
     padding: 4px;
     background: var(--accent-grad);
@@ -1181,7 +1183,7 @@ blockquote {
     .hero-cta { justify-content: center; }
     .hero-stats { grid-template-columns: repeat(2, 1fr); }
     .hero-image-wrap { order: -1; }
-    .profile-ring { width: 200px; height: 200px; }
+    .profile-ring { width: 240px; height: 240px; }
 
     .about-grid { grid-template-columns: 1fr; }
     .edu-header { flex-direction: column; gap: 16px; }
